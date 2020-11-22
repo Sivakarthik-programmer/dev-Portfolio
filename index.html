@@ -9,6 +9,8 @@
 	<link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@500&family=Russo+One&display=swap" rel="stylesheet">
 
 	<link rel="stylesheet" type="text/css" href="default.css">
+	<link id="theme-style" rel="stylesheet" href="">
+
 </head>
 <body>
 
@@ -36,10 +38,10 @@
 					<h5 style="text-align:center; line-height: 0;">Personalize Theme</h5>
 
 					<div id="theme-options-wrapper">
-						<div id="light-mode" class="theme-dot"></div>
-						<div id="blue-mode" class="theme-dot"></div>
-						<div id="green-mode" class="theme-dot"></div>
-						<div id="purple-mode" class="theme-dot"></div>
+						<div data-mode="light" id="light-mode" class="theme-dot"></div>
+						<div data-mode="blue" id="blue-mode" class="theme-dot"></div>
+						<div data-mode="green" id="green-mode" class="theme-dot"></div>
+						<div data-mode="purple" id="purple-mode" class="theme-dot"></div>
 					</div>
 
 						<p id="settings-note">*Theme settings will be saved for <br> your next visit</p>
@@ -69,15 +71,126 @@
 	</section>
 
 	<section class="s2">
-		<div class="main-container">About</div>
+		<div class="main-container">
+			<div class="about-wrapper">
+				<div class="about-me">
+					<h4>More about me</h4>
+					<p>I build new projects just to tickle my brain and love learning new technologies how they're made.</p>
+					<p>While busy learning new things, I still try to workout on projects that interest me.</p>
+				
+
+				<hr>
+				
+				<h4>Top Expertise</h4>
+				<p>Web developer with primary focus on  Javascript + React: <a href="resume.pdf" target="_blank">Download Resume</a></p>	
+				
+				<div id="skills">
+					<ul>
+						<li>Javascript</li>
+						<li>React</li>
+						<li>MySQL</li>
+						<li>NPM</li>
+						<li>JQuery</li>
+					</ul>				
+					<ul>
+						<li>HTML/CSS</li>
+						<li>GIT</li>
+						<li>Heroku</li>
+						<li>Sass</li>
+						<li>Bootstrap</li>
+					</ul>
+				</div>
+			</div>
+
+			<div class="social-links">
+					<img id="social_img" src="images/follow.jpg" alt="Linkedin profile">
+
+					<h3>Find me on Linkedin & GitHub</h3>
+
+					<a href="https://www.linkedin.com/in/sivakarthik-g/" target="_blank">LinkedIn: Sivakarthik</a>
+					<br>
+
+					<a href="https://github.com/Sivakarthik-programmer" target="_blank"> Github: Sivakarthik-programmer </a>
+
+				</div>
+			</div>
+
+		</div>
 	</section>
 
 	<section class="s1">
-		<div class="main-container">Portfolio</div>
+		<div class="main-container">
+			<h3 style="text-align: center;">Some of my projects</h3>
+
+			<div class="post-wrapper">
+		
+				<div>
+					<div class="post">
+						<img class="thumbnail" src="images/project-2.png" alt="Sai sri labels website">
+						<div class="post-preview">
+							<h6 class="post-title">Sai sri labels website</h6>
+							<p class="post-intro">
+								Designed build & maintained the website for Sai Sri Lables
+							</p>
+							<a href="http://saisri.com/" target="_blank">Read More</a>
+						</div>
+					</div>
+				</div>
+
+				<div>
+					<div class="post">
+						<img class="thumbnail" src="images/project-3.jpg" alt="Netflix-clone React app">
+						<div class="post-preview">
+							<h6 class="post-title">Netflix Clone React app</h6>
+							<p class="post-intro">
+								Designed build the Netflix clone app using React
+							</p>
+							<a href="https://netflix-clone-s1994.firebaseapp.com/" target="_blank">Read More</a>
+						</div>
+					</div>
+				</div>
+				
+				<div>
+					<div class="post">
+						<img class="thumbnail" src="images/sample-project.jpg" alt="bg generator">
+						<div class="post-preview">
+							<h6 class="post-title">Background generator</h6>
+							<p class="post-intro">
+								Sample app to generate gradient backgraound for websites
+							</p>
+							<a href="https://sivakarthik-programmer.github.io/gradient-bg-generator/" target="-blank">Read More</a>
+						</div>
+					</div>
+				</div>
+
+			</div>
+
+		</div>
 	</section>
 	
-		<section class="s2">
-		<div class="main-container">Contact</div>
+	<section class="s2">
+		<div class="main-container">
+					<h3 style="text-align: center;">Get In Touch</h3>
+
+					<form id="contact-form" action="">
+						<label>Name</label>
+						<input class="input-field" type="text" name="name">
+
+						<label>Subject</label>
+						<input class="input-field" type="text" name="subject">
+
+						<label>Email</label>
+						<input class="input-field" type="text" name="email">
+
+						<label>Message</label>
+						<textarea class="input-field" type="text" name="message"></textarea>
+
+
+						<input id="submit-btn" type="submit" value="Send">
+
+					</form>
+		</div>
 	</section>
+	<script type="text/javascript" src="script.js"></script>
 </body>
 </html>
