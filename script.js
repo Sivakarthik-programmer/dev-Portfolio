@@ -4,9 +4,9 @@ let themeDots = document.getElementsByClassName('theme-dot');
 let theme = localStorage.getItem('theme');
 
 if(theme == null){
-	setTheme('blue')
+	setTheme('blue');
 }else{
-	setTheme(theme)
+	setTheme(theme);
 }
 
 for (var i=0; themeDots.length >i; i++) {
