@@ -172,21 +172,28 @@
 		<div class="main-container">
 					<h3 style="text-align: center;">Get In Touch</h3>
 
-					<form id="contact-form" action="">
-						<label>Name</label>
-						<input class="input-field" type="text" name="name">
+					<form id="contact-form" action="POST" data-netlify="true">
+				<a name="contact"></a>
 
-						<label>Subject</label>
-						<input class="input-field" type="text" name="subject">
+				<label>Name</label>
+				<input class="input-field" type="text" name="name">
 
-						<label>Email</label>
-						<input class="input-field" type="text" name="email">
+				<label>Subject</label>
+				<input class="input-field" type="text" name="subject">
 
-						<label>Message</label>
-						<textarea class="input-field" type="text" name="message"></textarea>
+				<label>Email</label>
+				<input class="input-field" type="text" name="email">
 
+				<label>Message</label>
+				<textarea class="input-field" name="message"></textarea>
+				
+				<label>File</label>
+				<input type="file" id="myfile" name="Myfile" placeholder="upload file">
+				<br>
 
-						<input id="submit-btn" type="submit" value="Send">
+				<div data-netlify-recaptcha="true"></div>
+
+				<input id="submit-btn" type="submit" value="Send">
 
 					</form>
 		</div>
