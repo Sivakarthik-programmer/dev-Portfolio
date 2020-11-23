@@ -13,6 +13,8 @@
 	--previewShadow: #f0ead6;
 
 	--buttonColor: black;
+
+	--textareaColor: black;
 }
 	
 html, body{
@@ -359,6 +361,7 @@ h6{font-size: 16px;}
 #contact-form textarea{
 	min-height: 100px;
 	font-size: 14px;
+	color: var(--textareaColor);
 }
 
 
